@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>drew</groupId>
+  <artifactId>drew-datacube</artifactId>
+  <version>1</version>
+  <name>drew-datacube</name>
+  <description>Datacube Experiments</description>
+  
+    <build>
+    <plugins>
+      <!-- Maven 2 won't build as Java 1.6 unless we configure this -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>s
+      </plugin>
+    </plugins>
+    </build>
+    
+    <dependencies>
+      <dependency>
+        <groupId>com.urbanairship</groupId>
+        <artifactId>datacube</artifactId>
+        <version>1.2.4-SNAPSHOT</version>
+        <classifier>hbase0.94.1-hadoop0.20.205.0</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-core</artifactId>
+        <version>0.20.205.0</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.10</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.opencsv</groupId>
+        <artifactId>opencsv</artifactId>
+        <version>2.3</version>
+      </dependency>
+    </dependencies>
+</project>
