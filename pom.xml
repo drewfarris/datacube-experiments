@@ -1,10 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>drew</groupId>
-  <artifactId>drew-datacube</artifactId>
+  <groupId>experiments</groupId>
+  <artifactId>datacube-experiments</artifactId>
   <version>1</version>
-  <name>drew-datacube</name>
-  <description>Datacube Experiments</description>
+  <name>datacube-experiments</name>
+  <description>
+   Experimentation with Urbanairship's datacube:
+   https://github.com/urbanairship/datacube
+  </description>
   
     <build>
     <plugins>
@@ -16,7 +19,7 @@
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
-        </configuration>s
+        </configuration>
       </plugin>
     </plugins>
     </build>
@@ -42,6 +45,11 @@
         <groupId>net.sf.opencsv</groupId>
         <artifactId>opencsv</artifactId>
         <version>2.3</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.accumulo</groupId>
+        <artifactId>accumulo-core</artifactId>
+        <version>1.4.1</version>
       </dependency>
     </dependencies>
 </project>
