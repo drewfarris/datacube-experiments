@@ -1,30 +1,30 @@
 package drew.ufo.reader;
 
-import java.util.Date;
+import org.joda.time.DateTime;
 
 public class UFODataEntry {
 	
-	Date eventDate;
-	Date reportDate;
+	DateTime eventDate;
+	DateTime reportDate;
 	String city;
 	String state;
 	String shape;
 	String duration;
 	String description;
 	
-	public Date getEventDate() {
+	public DateTime getEventDate() {
 		return eventDate;
 	}
 	
-	public void setEventDate(Date eventDate) {
+	public void setEventDate(DateTime eventDate) {
 		this.eventDate = eventDate;
 	}
 	
-	public Date getReportDate() {
+	public DateTime getReportDate() {
 		return reportDate;
 	}
 	
-	public void setReportDate(Date reportDate) {
+	public void setReportDate(DateTime reportDate) {
 		this.reportDate = reportDate;
 	}
 	
